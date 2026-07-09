@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GIFT City AI Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>🤖 GIFT City AI Assistant</h1>
+
+            <p>
+                Ask questions from official GIFT City documents
+            </p>
+
+        </div>
+
+        <!-- Welcome Card -->
+
+        <div class="welcome-card">
+
+            <h3>Welcome 👋</h3>
+
+            <p>
+                I can answer questions about:
+            </p>
+
+            <div class="suggestions">
+
+                <button onclick="fillQuestion('Power connection')">
+                    ⚡ Power
+                </button>
+
+                <button onclick="fillQuestion('Water connection')">
+                    💧 Water
+                </button>
+
+                <button onclick="fillQuestion('CRM services')">
+                    📞 CRM
+                </button>
+
+                <button onclick="fillQuestion('Commercial building')">
+                    🏢 Commercial
+                </button>
+
+                <button onclick="fillQuestion('Residential building')">
+                    🏠 Residential
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Chat -->
+
+        <div id="chat-box"></div>
+
+        <!-- Input -->
+
+        <div class="input-area">
+
+            <textarea
+
+                id="question"
+
+                placeholder="Ask anything about GIFT City..."
+
+                rows="2"
+
+            ></textarea>
+
+            <button onclick="askQuestion()">
+
+                Send ➜
+
+            </button>
+
+        </div>
+
+        <!-- Footer -->
+
+        <!-- <div class="footer">
+
+            Powered by
+
+            <span>FastAPI</span>
+
+            •
+
+            <span>FAISS</span>
+
+            •
+
+            <span>Sentence Transformers</span>
+
+            •
+
+            <span>Ollama</span>
+
+            •
+
+            <span>Qwen</span>
+
+        </div> -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+__pycache__/
+*.pyc
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache
+.pytest_cache/
+
+# Vector Store (optional)
+# Uncomment if you don't want to upload generated files
+# app/vector_store/*.faiss
+# app/vector_store/*.pkl
+
+# Logs
+*.log
